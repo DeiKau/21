@@ -108,17 +108,17 @@ def draw_game(act, record, result):
         stand_text = font.render('STAND', True, 'black')
         screen.blit(stand_text, (355, 735))
         button_list.append(stand)
-        # Render text with white outline
+        # Render text with black outline
         score_text_outline = smaller_font.render(f'Wins: {record[0]}   Losses: {record[1]}   Draws: {record[2]}', True,
                                                  'black')
-        # Render text with black color
+        # Render text with white color
         score_text = smaller_font.render(f'Wins: {record[0]}   Losses: {record[1]}   Draws: {record[2]}', True, 'white')
 
         # Blit the text with white outline
-        screen.blit(score_text_outline, (15 - 1, 840 - 1))  # Offset by (-1, -1)
-        screen.blit(score_text_outline, (15 + 1, 840 - 1))  # Offset by (+1, -1)
-        screen.blit(score_text_outline, (15 - 1, 840 + 1))  # Offset by (-1, +1)
-        screen.blit(score_text_outline, (15 + 1, 840 + 1))  # Offset by (+1, +1)
+        screen.blit(score_text_outline, (15 - 1, 840 - 1))
+        screen.blit(score_text_outline, (15 + 1, 840 - 1))
+        screen.blit(score_text_outline, (15 - 1, 840 + 1))
+        screen.blit(score_text_outline, (15 + 1, 840 + 1))
 
         # Blit the text with black color
         screen.blit(score_text, (15, 840))
