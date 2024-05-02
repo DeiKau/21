@@ -159,8 +159,7 @@ def check_endgame(hand_act, deal_score, play_score, result, totals, add):
 run = True
 while run:
     timer.tick(fps)
-    screen.blit(background_image, (0, 0))  # Draw the background image
-    # screen.fill('black')
+    screen.blit(background_image, (0, 0))
 
     if initial_deal:
         for i in range(2):
@@ -223,4 +222,3 @@ while run:
     pygame.display.flip()
 
 pygame.quit()
-
